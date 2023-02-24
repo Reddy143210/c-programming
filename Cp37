@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main() {
+   int num,num2,i;
+   printf("
+enter a number");
+   scanf("%d" , &num);
+   num2=num%10;    //storing unit digit in num2
+   printf("
+ unit digit of %d is: %d",num,num2);
+      for(i=2;i<=num2/2;++i) {    //loop till half of unit digit
+      if(num2%i==0) { //calculate multiples
+         printf("
+ multiple of %d is : %d ",num2,i);
+      }
+   }
+return 0;
+}
