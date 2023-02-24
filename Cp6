@@ -1,0 +1,47 @@
+#include<stdio.h>
+
+#include<conio.h>
+
+void main()
+
+{
+
+int cr,pr,unit,ud,amt;
+
+clrscr();
+
+printf("Enter the current reading\n& previous reading: ");
+
+scanf("%d%d",&cr,&pr);
+
+unit=cr-pr;
+
+ud=unit/100;
+
+switch(ud)
+
+{
+
+case 1: amt=unit+(unit*0.5);
+
+break;
+
+case 2: amt=unit+(unit*1);
+
+break;
+
+case 3: amt=unit+(unit*1.5);
+
+break;
+
+default: amt=unit+(unit*2);
+
+break;
+
+}
+
+printf("Total amount is %d",amt);
+
+getch();
+
+}
